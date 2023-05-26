@@ -27,7 +27,7 @@ const MyApp = ({ Component, pageProps }: AppProps<{ session: Session | null }>) 
       <div className="bg-gray-900 text-gray-50">
         <div className="container mx-auto flex items-start sm:pr-4">
           <SideNav />
-          <div className="min-h-screen flex-grow border-x">
+          <div className="min-h-screen flex-grow border-x border-gray-800">
             <Component {...restPageProps} />
           </div>
         </div>
