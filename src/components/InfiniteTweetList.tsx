@@ -56,8 +56,12 @@ export function InfiniteTweetList({
   );
 }
 
-const dateTimeFormatter = new Intl.DateTimeFormat(undefined, {
-  dateStyle: "short",
+const dateTimeFormatter = new Intl.DateTimeFormat("pt-BR", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "numeric",
+    minute: "numeric",
 });
 
 function TweetCard({
@@ -130,7 +134,7 @@ function TweetCard({
           </Link>
           <span className="text-gray-500">-</span>
           <span className="text-gray-500">
-            {dateTimeFormatter.format(createdAt)}
+            {dateTimeFormatter.format(createdAt).replace(",", "")}
           </span>
         </div>
         <p className="whitespace-pre-wrap">{content}</p>
