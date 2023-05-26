@@ -15,8 +15,13 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <Head>
-        <title>Twitter Clone</title>
-        <meta name="description" content="This is a Twitter clone by Mago Minimalista"/>
+        <title>Twitter Clone - Apenas para fins de didáticos</title>
+        <meta name="description" content="Clone do Twitter desenvolvido como projeto de estudo e aprendizado. Este site não possui afiliação com o Twitter e não oferece funcionalidades de postagem real ou acesso a dados reais do Twitter.">
+        <meta name="clone-twitter-purpose" content="Estudo e aprendizado do desenvolvimento web">
+        <meta name="keywords" content="magominimalista, twitter-clone">
+        <meta name="author" content="Mago Minimalista">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-gray-900 text-gray-50">
