@@ -1,7 +1,7 @@
 import React from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { LoadingSpinner } from "./LoadingSpinner";
-import { TweetCard } from "./InfiniteTweetCard";
+import { TweetCard, Tweet } from "./InfiniteTweetCard";
 
 type InfiniteTweetListProps = {
   tweets?: Tweet[];
