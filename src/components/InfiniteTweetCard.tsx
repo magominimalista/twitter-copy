@@ -5,7 +5,7 @@ import { ProfileImage } from "./ProfileImage";
 import { IconHoverEffect } from "./IconHoverEffect";
 import { useSession } from "next-auth/react";
 import { VscHeart, VscHeartFilled } from "react-icons/vsc";
-import { formatDateTime } from "./dateTimeUtils";
+import { formatDateTime } from "./DateTimeUtils";
 
 type Tweet = {
   id: string;
