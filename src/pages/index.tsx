@@ -9,11 +9,13 @@ import TabButton from "~/components/TabButton";
 
 const TABS = ["Recent", "Following"] as const;
 
+type Tab = typeof TABS[number];
+
 const Home: NextPage = () => {
-  const [selectedTab, setSelectedTab] = useState<typeof TABS[number]>("Recent");
+  const [selectedTab, setSelectedTab] = useState<Tab>("Recent");
   const session = useSession();
 
-  const handleTabClick = (tab: typeof TABS[number]) => {
+  const handleTabClick = (tab: Tab) => {
     setSelectedTab(tab);
   };
 
