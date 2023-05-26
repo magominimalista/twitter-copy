@@ -49,7 +49,7 @@ import type {
         <Head>
           <title>{`Twitter Clone - ${profile.name}`}</title>
         </Head>
-        <header className="sticky top-0 z-10 flex items-center border-b bg-white px-4 py-2">
+        <header className="sticky top-0 z-10 flex items-center border-b border-gray-800 bg-gray-900 px-4 py-2">
           <Link href=".." className="mr-2">
             <IconHoverEffect>
               <VscArrowLeft className="h-6 w-6" />

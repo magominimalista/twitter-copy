@@ -19,13 +19,16 @@ const MyApp: AppType<{ session: Session | null }> = ({
         <meta name="description" content="This is a Twitter clone by Mago Minimalista"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container mx-auto flex items-start sm:pr-4">
-        <SideNav />
-        <div className="min-h-screen flex-grow border-x">
-          <Component {...pageProps} />
+      <div className="bg-gray-900 text-gray-50">
+        <div className="container mx-auto flex items-start sm:pr-4">
+          <SideNav />
+          <div className="min-h-screen flex-grow border-x border-gray-800">
+            <Component {...pageProps} />
+          </div>
+          
         </div>
-        
       </div>
+      
     </SessionProvider>
   );
 };

@@ -120,7 +120,7 @@ function TweetCard({
   }
 
   return (
-    <li className="flex gap-4 border-b px-4 py-4">
+    <li className="flex gap-4 border-b border-gray-800 px-4 py-4">
       <Link href={`/profile/${user.id}`}>
         <ProfileImage src={user.image} />
       </Link>
