@@ -1,12 +1,12 @@
-import Image from "next/image"
-import { VscAccount } from "react-icons/vsc"
+import Image from "next/image";
+import { VscAccount } from "react-icons/vsc";
 
 type ProfileImageProps = {
-    src?: String | null
-    className?: String
-}
+    src?: string | null;
+    className?: string;
+};
 
-export function ProfileImage({ src, className = ""}: ProfileImageProps) {
+export function ProfileImage({ src, className = "" }: ProfileImageProps) {
     return (
         <div className={`relative h-12 w-12 overflow-hidden rounded-full ${className}`}>
             {src != null 
@@ -18,5 +18,5 @@ export function ProfileImage({ src, className = ""}: ProfileImageProps) {
                 )
             }
         </div>
-    )
+    );
 }
